@@ -7,9 +7,9 @@ router.get('/articles/:sort?', juridicoController.getArticles);
 router.get('/articles/category/:category', juridicoController.getArticlesByCategory);
 router.get('/articles/keyword/:keyword', juridicoController.getArticlesByKeyword);
 
-router.post('/article', juridicoController.postArticle);
-router.put('/article/:id', juridicoController.putArticle);
-router.delete('/article/:id', juridicoController.deleteArticle);
+router.post('/articles', juridicoController.postArticle);
+router.put('/articles/:id', juridicoController.putArticle);
+router.delete('/articles/:id', juridicoController.deleteArticle);
 
 
 module.exports = router;
